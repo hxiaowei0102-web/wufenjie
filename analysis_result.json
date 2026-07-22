@@ -1,6 +1,6 @@
 {
   "prediction": {
-    "version": "S75",
+    "version": "S91",
     "next_issue": "2026193",
     "next_date": "2026-07-22",
     "today_date": "2026-07-22",
@@ -39,7 +39,7 @@
   "backtest_200": {
     "total": 200,
     "correct_ensemble": 200,
-    "correct_single": 178,
+    "correct_single": 181,
     "results": [
       {
         "issue": "2026192",
@@ -60,8 +60,8 @@
         "issue": "2026191",
         "date": "2026-07-20",
         "number": "906",
-        "rec_name": "大小分解",
-        "rec_decomp": "01234 — 56789",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -690,9 +690,9 @@
         "issue": "2026149",
         "date": "2026-06-08",
         "number": "696",
-        "rec_name": "大小分解",
-        "rec_decomp": "01234 — 56789",
-        "single_ok": false,
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
         "ensemble_ok": true,
         "hits": [
           false,
@@ -1050,8 +1050,8 @@
         "issue": "2026125",
         "date": "2026-05-15",
         "number": "954",
-        "rec_name": "大小分解",
-        "rec_decomp": "01234 — 56789",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -1350,8 +1350,8 @@
         "issue": "2026105",
         "date": "2026-04-25",
         "number": "631",
-        "rec_name": "大小分解",
-        "rec_decomp": "01234 — 56789",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -1950,8 +1950,8 @@
         "issue": "2026065",
         "date": "2026-03-16",
         "number": "057",
-        "rec_name": "08异分解",
-        "rec_decomp": "01479 — 23568",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -2055,9 +2055,9 @@
         "issue": "2026058",
         "date": "2026-03-09",
         "number": "543",
-        "rec_name": "内外分解",
-        "rec_decomp": "01289 — 34567",
-        "single_ok": false,
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
         "ensemble_ok": true,
         "hits": [
           true,
@@ -2250,8 +2250,8 @@
         "issue": "2026045",
         "date": "2026-02-24",
         "number": "181",
-        "rec_name": "奇偶分解",
-        "rec_decomp": "13579 — 02468",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -2355,9 +2355,9 @@
         "issue": "2026038",
         "date": "2026-02-07",
         "number": "467",
-        "rec_name": "内外分解",
-        "rec_decomp": "01289 — 34567",
-        "single_ok": false,
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
+        "single_ok": true,
         "ensemble_ok": true,
         "hits": [
           true,
@@ -2385,8 +2385,8 @@
         "issue": "2026036",
         "date": "2026-02-05",
         "number": "762",
-        "rec_name": "奇偶分解",
-        "rec_decomp": "13579 — 02468",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -2940,8 +2940,8 @@
         "issue": "2025350",
         "date": "2025-12-30",
         "number": "580",
-        "rec_name": "大小分解",
-        "rec_decomp": "01234 — 56789",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -2970,8 +2970,8 @@
         "issue": "2025348",
         "date": "2025-12-28",
         "number": "278",
-        "rec_name": "大小分解",
-        "rec_decomp": "01234 — 56789",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -2985,8 +2985,8 @@
         "issue": "2025347",
         "date": "2025-12-27",
         "number": "192",
-        "rec_name": "奇偶分解",
-        "rec_decomp": "13579 — 02468",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -3043,11 +3043,11 @@
       }
     ],
     "ensemble_acc": 100.0,
-    "single_acc": 89.0
+    "single_acc": 90.5
   },
   "rec_accuracy": {
-    "200期": 89.0,
-    "500期": 81.0,
-    "1000期": 79.2
+    "200期": 90.5,
+    "500期": 81.8,
+    "1000期": 80.0
   }
 }
