@@ -1,14 +1,14 @@
 {
   "prediction": {
     "version": "S92",
-    "next_issue": "2026193",
-    "next_date": "2026-07-22",
+    "next_issue": "2026194",
+    "next_date": "2026-07-23",
     "today_date": "2026-07-22",
-    "last_issue": "2026192",
-    "last_number": "425",
+    "last_issue": "2026193",
+    "last_number": "254",
     "rec_name": "大小分解",
     "rec_decomp": "01234 — 56789",
-    "reason": "上期2026192 大小分解命中，本期推荐",
+    "reason": "上期2026193 大小分解命中，本期推荐",
     "all_decomps": [
       {
         "name": "大小分解",
@@ -39,8 +39,23 @@
   "backtest_200": {
     "total": 200,
     "correct_ensemble": 200,
-    "correct_single": 182,
+    "correct_single": 183,
     "results": [
+      {
+        "issue": "2026193",
+        "date": "2026-07-22",
+        "number": "254",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
       {
         "issue": "2026192",
         "date": "2026-07-21",
@@ -3025,29 +3040,14 @@
           true,
           true
         ]
-      },
-      {
-        "issue": "2025344",
-        "date": "2025-12-24",
-        "number": "622",
-        "rec_name": "奇偶分解",
-        "rec_decomp": "13579 — 02468",
-        "single_ok": false,
-        "ensemble_ok": true,
-        "hits": [
-          true,
-          false,
-          true,
-          false
-        ]
       }
     ],
     "ensemble_acc": 100.0,
-    "single_acc": 91.0
+    "single_acc": 91.5
   },
   "rec_accuracy": {
     "100期": 90.0,
-    "200期": 91.0,
+    "200期": 91.5,
     "500期": 82.0,
     "1000期": 79.9
   }
