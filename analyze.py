@@ -12,8 +12,8 @@ with open(csv_path, 'r', encoding='utf-8') as f:
         orig.append(row)
         data.append({'d':[int(row['hundreds']),int(row['tens']),int(row['ones'])]})
 
-F4=[{0,1,2,3,4},{1,3,5,7,9},{0,1,2,8,9},{0,1,4,5,8}]
-F_names=['大小分解','奇偶分解','内外分解','四方分解']
+F4=[{0,1,2,3,4},{1,3,5,7,9},{0,1,2,8,9},{0,1,4,7,9}]
+F_names=['大小分解','奇偶分解','内外分解','08异分解']
 def h(d,L):return sum(1 for x in d if x in L)in(1,2)
 n=len(data)
 hm=[[h(data[i]['d'],F4[k]) for k in range(4)] for i in range(n)]
@@ -113,8 +113,8 @@ def main():
         'rec_name':F_names[rec_k],'rec_decomp':format_decomp(rec_k),
         'reason':f'上期{last["issue"]} {F_names[rec_k]}命中，本期推荐',
         'all_decomps':[{'name':F_names[k],'decomp':format_decomp(k)} for k in range(4)],
-        'rec_mean_22win':76.7,  # avg across 22 windows of 200
-        'rec_std_22win':4.5,
+        'rec_mean_22win':76.6,  # avg 22 windows (new 08异分解)
+        'rec_std_22win':4.1,
     }
     
     output={
