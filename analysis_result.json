@@ -1,0 +1,3053 @@
+{
+  "prediction": {
+    "version": "S75",
+    "next_issue": "2026193",
+    "next_date": "2026-07-22",
+    "today_date": "2026-07-22",
+    "last_issue": "2026192",
+    "last_number": "425",
+    "rec_name": "大小分解",
+    "rec_decomp": "01234 — 56789",
+    "reason": "上期2026192 大小分解命中，本期推荐",
+    "all_decomps": [
+      {
+        "name": "大小分解",
+        "decomp": "01234 — 56789"
+      },
+      {
+        "name": "奇偶分解",
+        "decomp": "13579 — 02468"
+      },
+      {
+        "name": "内外分解",
+        "decomp": "01289 — 34567"
+      },
+      {
+        "name": "四方分解",
+        "decomp": "01458 — 23679"
+      }
+    ],
+    "rec_mean_22win": 76.7,
+    "rec_std_22win": 4.5
+  },
+  "accuracy": {
+    "200期": 100.0,
+    "500期": 99.2,
+    "1000期": 99.1,
+    "2000期": 98.9
+  },
+  "backtest_200": {
+    "total": 200,
+    "correct_ensemble": 200,
+    "correct_single": 178,
+    "results": [
+      {
+        "issue": "2026192",
+        "date": "2026-07-21",
+        "number": "425",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026191",
+        "date": "2026-07-20",
+        "number": "906",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026190",
+        "date": "2026-07-19",
+        "number": "026",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026189",
+        "date": "2026-07-18",
+        "number": "558",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026188",
+        "date": "2026-07-17",
+        "number": "969",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026187",
+        "date": "2026-07-16",
+        "number": "023",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026186",
+        "date": "2026-07-15",
+        "number": "045",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026185",
+        "date": "2026-07-14",
+        "number": "397",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026184",
+        "date": "2026-07-13",
+        "number": "902",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026183",
+        "date": "2026-07-12",
+        "number": "923",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026182",
+        "date": "2026-07-11",
+        "number": "662",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026181",
+        "date": "2026-07-10",
+        "number": "818",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "issue": "2026180",
+        "date": "2026-07-09",
+        "number": "520",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026179",
+        "date": "2026-07-08",
+        "number": "993",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026178",
+        "date": "2026-07-07",
+        "number": "266",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026177",
+        "date": "2026-07-06",
+        "number": "808",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "issue": "2026176",
+        "date": "2026-07-05",
+        "number": "269",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026175",
+        "date": "2026-07-04",
+        "number": "421",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026174",
+        "date": "2026-07-03",
+        "number": "618",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026173",
+        "date": "2026-07-02",
+        "number": "677",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "issue": "2026172",
+        "date": "2026-07-01",
+        "number": "445",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "issue": "2026171",
+        "date": "2026-06-30",
+        "number": "134",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026170",
+        "date": "2026-06-29",
+        "number": "805",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026169",
+        "date": "2026-06-28",
+        "number": "832",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026168",
+        "date": "2026-06-27",
+        "number": "130",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026167",
+        "date": "2026-06-26",
+        "number": "631",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026166",
+        "date": "2026-06-25",
+        "number": "900",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026165",
+        "date": "2026-06-24",
+        "number": "424",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026164",
+        "date": "2026-06-23",
+        "number": "690",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026163",
+        "date": "2026-06-22",
+        "number": "537",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026162",
+        "date": "2026-06-21",
+        "number": "585",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026161",
+        "date": "2026-06-20",
+        "number": "529",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026160",
+        "date": "2026-06-19",
+        "number": "332",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026159",
+        "date": "2026-06-18",
+        "number": "995",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026158",
+        "date": "2026-06-17",
+        "number": "178",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026157",
+        "date": "2026-06-16",
+        "number": "327",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026156",
+        "date": "2026-06-15",
+        "number": "162",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026155",
+        "date": "2026-06-14",
+        "number": "409",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026154",
+        "date": "2026-06-13",
+        "number": "377",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "issue": "2026153",
+        "date": "2026-06-12",
+        "number": "887",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026152",
+        "date": "2026-06-11",
+        "number": "220",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026151",
+        "date": "2026-06-10",
+        "number": "631",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026150",
+        "date": "2026-06-09",
+        "number": "720",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026149",
+        "date": "2026-06-08",
+        "number": "696",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026148",
+        "date": "2026-06-07",
+        "number": "408",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026147",
+        "date": "2026-06-06",
+        "number": "712",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026146",
+        "date": "2026-06-05",
+        "number": "464",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026145",
+        "date": "2026-06-04",
+        "number": "279",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026144",
+        "date": "2026-06-03",
+        "number": "726",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026143",
+        "date": "2026-06-02",
+        "number": "376",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "issue": "2026142",
+        "date": "2026-06-01",
+        "number": "894",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026141",
+        "date": "2026-05-31",
+        "number": "397",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026140",
+        "date": "2026-05-30",
+        "number": "285",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026139",
+        "date": "2026-05-29",
+        "number": "286",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026138",
+        "date": "2026-05-28",
+        "number": "790",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026137",
+        "date": "2026-05-27",
+        "number": "165",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026136",
+        "date": "2026-05-26",
+        "number": "889",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026135",
+        "date": "2026-05-25",
+        "number": "487",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026134",
+        "date": "2026-05-24",
+        "number": "654",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026133",
+        "date": "2026-05-23",
+        "number": "080",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "issue": "2026132",
+        "date": "2026-05-22",
+        "number": "756",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026131",
+        "date": "2026-05-21",
+        "number": "598",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026130",
+        "date": "2026-05-20",
+        "number": "267",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026129",
+        "date": "2026-05-19",
+        "number": "023",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026128",
+        "date": "2026-05-18",
+        "number": "776",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "issue": "2026127",
+        "date": "2026-05-17",
+        "number": "700",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026126",
+        "date": "2026-05-16",
+        "number": "846",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026125",
+        "date": "2026-05-15",
+        "number": "954",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026124",
+        "date": "2026-05-14",
+        "number": "280",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026123",
+        "date": "2026-05-13",
+        "number": "200",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026122",
+        "date": "2026-05-12",
+        "number": "346",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026121",
+        "date": "2026-05-11",
+        "number": "393",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026120",
+        "date": "2026-05-10",
+        "number": "734",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026119",
+        "date": "2026-05-09",
+        "number": "112",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026118",
+        "date": "2026-05-08",
+        "number": "132",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026117",
+        "date": "2026-05-07",
+        "number": "411",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026116",
+        "date": "2026-05-06",
+        "number": "020",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026115",
+        "date": "2026-05-05",
+        "number": "581",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026114",
+        "date": "2026-05-04",
+        "number": "864",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026113",
+        "date": "2026-05-03",
+        "number": "040",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026112",
+        "date": "2026-05-02",
+        "number": "065",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026111",
+        "date": "2026-05-01",
+        "number": "863",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026110",
+        "date": "2026-04-30",
+        "number": "379",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026109",
+        "date": "2026-04-29",
+        "number": "195",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026108",
+        "date": "2026-04-28",
+        "number": "671",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026107",
+        "date": "2026-04-27",
+        "number": "278",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026106",
+        "date": "2026-04-26",
+        "number": "928",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026105",
+        "date": "2026-04-25",
+        "number": "631",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026104",
+        "date": "2026-04-24",
+        "number": "482",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026103",
+        "date": "2026-04-23",
+        "number": "661",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026102",
+        "date": "2026-04-22",
+        "number": "420",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026101",
+        "date": "2026-04-21",
+        "number": "584",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026100",
+        "date": "2026-04-20",
+        "number": "414",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026099",
+        "date": "2026-04-19",
+        "number": "877",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026098",
+        "date": "2026-04-18",
+        "number": "513",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026097",
+        "date": "2026-04-17",
+        "number": "818",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "issue": "2026096",
+        "date": "2026-04-16",
+        "number": "689",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026095",
+        "date": "2026-04-15",
+        "number": "022",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026094",
+        "date": "2026-04-14",
+        "number": "418",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026093",
+        "date": "2026-04-13",
+        "number": "518",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026092",
+        "date": "2026-04-12",
+        "number": "870",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026091",
+        "date": "2026-04-11",
+        "number": "537",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026090",
+        "date": "2026-04-10",
+        "number": "816",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026089",
+        "date": "2026-04-09",
+        "number": "922",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "issue": "2026088",
+        "date": "2026-04-08",
+        "number": "608",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026087",
+        "date": "2026-04-07",
+        "number": "911",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026086",
+        "date": "2026-04-06",
+        "number": "382",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026085",
+        "date": "2026-04-05",
+        "number": "118",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "issue": "2026084",
+        "date": "2026-04-04",
+        "number": "456",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026083",
+        "date": "2026-04-03",
+        "number": "506",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026082",
+        "date": "2026-04-02",
+        "number": "942",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026081",
+        "date": "2026-04-01",
+        "number": "827",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026080",
+        "date": "2026-03-31",
+        "number": "802",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026079",
+        "date": "2026-03-30",
+        "number": "233",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026078",
+        "date": "2026-03-29",
+        "number": "049",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026077",
+        "date": "2026-03-28",
+        "number": "112",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026076",
+        "date": "2026-03-27",
+        "number": "863",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026075",
+        "date": "2026-03-26",
+        "number": "816",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026074",
+        "date": "2026-03-25",
+        "number": "487",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026073",
+        "date": "2026-03-24",
+        "number": "504",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026072",
+        "date": "2026-03-23",
+        "number": "245",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026071",
+        "date": "2026-03-22",
+        "number": "261",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026070",
+        "date": "2026-03-21",
+        "number": "484",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026069",
+        "date": "2026-03-20",
+        "number": "908",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026068",
+        "date": "2026-03-19",
+        "number": "706",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026067",
+        "date": "2026-03-18",
+        "number": "695",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026066",
+        "date": "2026-03-17",
+        "number": "934",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026065",
+        "date": "2026-03-16",
+        "number": "057",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026064",
+        "date": "2026-03-15",
+        "number": "604",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026063",
+        "date": "2026-03-14",
+        "number": "517",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026062",
+        "date": "2026-03-13",
+        "number": "294",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026061",
+        "date": "2026-03-12",
+        "number": "429",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026060",
+        "date": "2026-03-11",
+        "number": "943",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026059",
+        "date": "2026-03-10",
+        "number": "794",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026058",
+        "date": "2026-03-09",
+        "number": "543",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026057",
+        "date": "2026-03-08",
+        "number": "264",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026056",
+        "date": "2026-03-07",
+        "number": "477",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026055",
+        "date": "2026-03-06",
+        "number": "107",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026054",
+        "date": "2026-03-05",
+        "number": "217",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026053",
+        "date": "2026-03-04",
+        "number": "755",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026052",
+        "date": "2026-03-03",
+        "number": "277",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026051",
+        "date": "2026-03-02",
+        "number": "302",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026050",
+        "date": "2026-03-01",
+        "number": "689",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026049",
+        "date": "2026-02-28",
+        "number": "110",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "issue": "2026048",
+        "date": "2026-02-27",
+        "number": "612",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026047",
+        "date": "2026-02-26",
+        "number": "936",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026046",
+        "date": "2026-02-25",
+        "number": "291",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026045",
+        "date": "2026-02-24",
+        "number": "181",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "issue": "2026044",
+        "date": "2026-02-13",
+        "number": "589",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026043",
+        "date": "2026-02-12",
+        "number": "765",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026042",
+        "date": "2026-02-11",
+        "number": "854",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026041",
+        "date": "2026-02-10",
+        "number": "901",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026040",
+        "date": "2026-02-09",
+        "number": "425",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026039",
+        "date": "2026-02-08",
+        "number": "450",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026038",
+        "date": "2026-02-07",
+        "number": "467",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026037",
+        "date": "2026-02-06",
+        "number": "420",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026036",
+        "date": "2026-02-05",
+        "number": "762",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026035",
+        "date": "2026-02-04",
+        "number": "213",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026034",
+        "date": "2026-02-03",
+        "number": "052",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026033",
+        "date": "2026-02-02",
+        "number": "119",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026032",
+        "date": "2026-02-01",
+        "number": "452",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026031",
+        "date": "2026-01-31",
+        "number": "142",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026030",
+        "date": "2026-01-30",
+        "number": "134",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026029",
+        "date": "2026-01-29",
+        "number": "003",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026028",
+        "date": "2026-01-28",
+        "number": "270",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026027",
+        "date": "2026-01-27",
+        "number": "126",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026026",
+        "date": "2026-01-26",
+        "number": "099",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026025",
+        "date": "2026-01-25",
+        "number": "029",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026024",
+        "date": "2026-01-24",
+        "number": "911",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026023",
+        "date": "2026-01-23",
+        "number": "784",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026022",
+        "date": "2026-01-22",
+        "number": "678",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026021",
+        "date": "2026-01-21",
+        "number": "559",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026020",
+        "date": "2026-01-20",
+        "number": "676",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "issue": "2026019",
+        "date": "2026-01-19",
+        "number": "223",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026018",
+        "date": "2026-01-18",
+        "number": "494",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026017",
+        "date": "2026-01-17",
+        "number": "945",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026016",
+        "date": "2026-01-16",
+        "number": "582",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026015",
+        "date": "2026-01-15",
+        "number": "532",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026014",
+        "date": "2026-01-14",
+        "number": "050",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2026013",
+        "date": "2026-01-13",
+        "number": "513",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026012",
+        "date": "2026-01-12",
+        "number": "241",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026011",
+        "date": "2026-01-11",
+        "number": "647",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026010",
+        "date": "2026-01-10",
+        "number": "667",
+        "rec_name": "四方分解",
+        "rec_decomp": "01458 — 23679",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "issue": "2026009",
+        "date": "2026-01-09",
+        "number": "265",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026008",
+        "date": "2026-01-08",
+        "number": "252",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026007",
+        "date": "2026-01-07",
+        "number": "353",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026006",
+        "date": "2026-01-06",
+        "number": "244",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026005",
+        "date": "2026-01-05",
+        "number": "476",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026004",
+        "date": "2026-01-04",
+        "number": "019",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2026003",
+        "date": "2026-01-03",
+        "number": "601",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026002",
+        "date": "2026-01-02",
+        "number": "520",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2026001",
+        "date": "2026-01-01",
+        "number": "298",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2025351",
+        "date": "2025-12-31",
+        "number": "452",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2025350",
+        "date": "2025-12-30",
+        "number": "580",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "issue": "2025349",
+        "date": "2025-12-29",
+        "number": "743",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2025348",
+        "date": "2025-12-28",
+        "number": "278",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2025347",
+        "date": "2025-12-27",
+        "number": "192",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          false,
+          true
+        ]
+      },
+      {
+        "issue": "2025346",
+        "date": "2025-12-26",
+        "number": "897",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2025345",
+        "date": "2025-12-25",
+        "number": "630",
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "issue": "2025344",
+        "date": "2025-12-24",
+        "number": "622",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": false,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          false,
+          true,
+          false
+        ]
+      }
+    ],
+    "ensemble_acc": 100.0,
+    "single_acc": 89.0
+  },
+  "rec_accuracy": {
+    "200期": 89.0,
+    "500期": 80.6,
+    "1000期": 79.4
+  }
+}
