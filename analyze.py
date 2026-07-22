@@ -23,8 +23,11 @@ def same_side_08(k):
     return (0 in F4[k] and 8 in F4[k]) or (0 not in F4[k] and 8 not in F4[k])
 # 0+8异侧: 大小(0左8右)  0+8同侧: 奇偶(0右8右) 内外(0左8左) 四方(0左8左)
 
-# 推荐策略: S75 = 五条件 + 0+8异侧偏好  — 200期89.0%
-def recommend_one(i):
+# S91多窗口变体列表
+S91_VARIANTS=[(100,500),(200,800),(250,1000),(300,1200),(350,1500),(400,2000),(500,2000)]
+
+def s75_with_window(i, N1=300, N2=1000):
+    """S75基础引擎, 可配置查表窗口"""
     if i<=0:return 1
     d=data[i-1]['d'];b,s,g=d;sp=max(d)-min(d);su=b+s+g;sig=sum((1<<k) for k in range(4) if hm[i-1][k])
     
@@ -36,14 +39,14 @@ def recommend_one(i):
     elif sig==15:candidates=[(b+s*s)%4]
     else:
         if sig==15:
-            bs=max(2,i-1000);ws=[0]*4;tot=0
+            bs=max(2,i-N2);ws=[0]*4;tot=0
             for j in range(bs,i-1):
                 if all(hm[j][k] for k in range(4)):
                     tot+=1
                     for k in range(4):ws[k]+=hm[j+1][k]
             candidates=[max(range(4),key=lambda k:ws[k]/tot) if tot>=10 else 1]
         else:
-            bs=max(2,i-300);st={}
+            bs=max(2,i-N1);st={}
             for j in range(bs,i-1):
                 hb=sum((1<<k) for k in range(4) if hm[j][k])
                 if hb not in st:st[hb]=[0]*4
@@ -57,7 +60,6 @@ def recommend_one(i):
                     if hm[i-1][k]:candidates.append(k)
                 if not candidates:candidates=[1]
     
-    # 选最优: 近期命中率×2 + 0+8异侧加分×3
     rec5=[sum(1 for j in range(max(0,i-5),i) if hm[j][k]) for k in range(4)]
     best=candidates[0];best_score=-1
     for ck in candidates:
@@ -65,6 +67,16 @@ def recommend_one(i):
         if score>best_score or (score==best_score and not same_side_08(ck)):
             best_score=score;best=ck
     return best
+
+# 推荐策略: S91 = 7窗口自适应选最优  — 200期90.5% 500期81.8%
+def recommend_one(i):
+    if i<=0:return 1
+    rbs=max(0,i-30);best_v=0;best_acc=0
+    for vi,(n1,n2) in enumerate(S91_VARIANTS):
+        wins=sum(1 for j in range(rbs,i) if hm[j][s75_with_window(j,n1,n2)])
+        acc=wins/max(1,i-rbs)
+        if acc>best_acc:best_acc=acc;best_v=vi
+    return s75_with_window(i,*S91_VARIANTS[best_v])
 
 def format_decomp(k):
     L=F4[k];R=set(range(10))-L
@@ -106,7 +118,7 @@ def main():
     bt.reverse()
     
     prediction={
-        'version':'S75',
+        'version':'S91',
         'next_issue':next_issue,'next_date':next_date,
         'today_date':datetime.now().strftime('%Y-%m-%d'),
         'last_issue':last['issue'],'last_number':last['number'],
