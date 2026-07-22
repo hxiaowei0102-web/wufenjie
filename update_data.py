@@ -37,19 +37,19 @@ def fetch_cwl():
     return results
 
 def fetch_tianqi():
-    """源2: 天齐网"""
+    """源2: 天齐网 (HTML, 单期最新)"""
     url = 'https://www.800820.net/Article/Index.html'
     req = Request(url, headers={'User-Agent': UA})
     html = urlopen(req, timeout=15).read()
-    # Try gb2312 first, then utf-8
     try: txt = html.decode('gb2312')
     except: txt = html.decode('utf-8', errors='ignore')
     
     results = []
-    # Pattern: 第XXXXXXX期中奖号码：XXX
-    for m in re.finditer(r'第(\d{7})期.*?中奖号码[：:\s]+(\d{3})', txt):
+    # Pattern: 福彩3D第2026192期中奖号码：425
+    m = re.search(r'福彩3D第(\d{7})期.*?中奖号码[：:\s]+(\d{3})', txt, re.DOTALL)
+    if m:
         issue, num = m.group(1), m.group(2)
-        # Find date: try near the issue text
+        # Date: find near the issue
         date_m = re.search(rf'{issue}.*?(\d{{4}}-\d{{2}}-\d{{2}})', txt)
         date_str = date_m.group(1) if date_m else (datetime.now()-timedelta(days=1)).strftime('%Y-%m-%d')
         results.append({'issue': issue, 'date': date_str,
