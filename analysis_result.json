@@ -23,12 +23,12 @@
         "decomp": "01289 — 34567"
       },
       {
-        "name": "四方分解",
-        "decomp": "01458 — 23679"
+        "name": "08异分解",
+        "decomp": "01479 — 23568"
       }
     ],
-    "rec_mean_22win": 76.7,
-    "rec_std_22win": 4.5
+    "rec_mean_22win": 76.6,
+    "rec_std_22win": 4.1
   },
   "accuracy": {
     "200期": 100.0,
@@ -113,7 +113,7 @@
           false,
           true,
           true,
-          false
+          true
         ]
       },
       {
@@ -143,7 +143,7 @@
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
@@ -158,15 +158,15 @@
           true,
           false,
           true,
-          false
+          true
         ]
       },
       {
         "issue": "2026184",
         "date": "2026-07-13",
         "number": "902",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -188,7 +188,7 @@
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
@@ -218,7 +218,7 @@
           true,
           true,
           false,
-          false
+          true
         ]
       },
       {
@@ -248,7 +248,7 @@
           true,
           false,
           true,
-          false
+          true
         ]
       },
       {
@@ -270,15 +270,15 @@
         "issue": "2026177",
         "date": "2026-07-06",
         "number": "808",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
-        "single_ok": false,
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
+        "single_ok": true,
         "ensemble_ok": true,
         "hits": [
           true,
           false,
           false,
-          false
+          true
         ]
       },
       {
@@ -293,15 +293,15 @@
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
         "issue": "2026175",
         "date": "2026-07-04",
         "number": "421",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -315,8 +315,8 @@
         "issue": "2026174",
         "date": "2026-07-03",
         "number": "618",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -338,7 +338,7 @@
           false,
           true,
           false,
-          false
+          true
         ]
       },
       {
@@ -353,7 +353,7 @@
           true,
           true,
           false,
-          false
+          true
         ]
       },
       {
@@ -375,15 +375,15 @@
         "issue": "2026170",
         "date": "2026-06-29",
         "number": "805",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
-        "single_ok": false,
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
+        "single_ok": true,
         "ensemble_ok": true,
         "hits": [
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
@@ -398,15 +398,15 @@
           true,
           true,
           true,
-          true
+          false
         ]
       },
       {
         "issue": "2026168",
         "date": "2026-06-27",
         "number": "130",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -443,15 +443,15 @@
           true,
           true,
           false,
-          true
+          false
         ]
       },
       {
         "issue": "2026165",
         "date": "2026-06-24",
         "number": "424",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -510,8 +510,8 @@
         "issue": "2026161",
         "date": "2026-06-20",
         "number": "529",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -555,8 +555,8 @@
         "issue": "2026158",
         "date": "2026-06-17",
         "number": "178",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -578,7 +578,7 @@
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
@@ -600,15 +600,15 @@
         "issue": "2026155",
         "date": "2026-06-14",
         "number": "409",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
-        "single_ok": true,
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
+        "single_ok": false,
         "ensemble_ok": true,
         "hits": [
           true,
           true,
           true,
-          true
+          false
         ]
       },
       {
@@ -623,7 +623,7 @@
           true,
           false,
           false,
-          false
+          true
         ]
       },
       {
@@ -645,8 +645,8 @@
         "issue": "2026152",
         "date": "2026-06-11",
         "number": "220",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -698,7 +698,7 @@
           false,
           true,
           true,
-          false
+          true
         ]
       },
       {
@@ -713,7 +713,7 @@
           true,
           false,
           true,
-          false
+          true
         ]
       },
       {
@@ -735,8 +735,8 @@
         "issue": "2026146",
         "date": "2026-06-05",
         "number": "464",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -758,7 +758,7 @@
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
@@ -773,22 +773,22 @@
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
         "issue": "2026143",
         "date": "2026-06-02",
         "number": "376",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
-        "single_ok": false,
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
+        "single_ok": true,
         "ensemble_ok": true,
         "hits": [
           true,
           true,
           false,
-          false
+          true
         ]
       },
       {
@@ -818,7 +818,7 @@
           true,
           false,
           true,
-          false
+          true
         ]
       },
       {
@@ -833,22 +833,22 @@
           true,
           true,
           true,
-          true
+          false
         ]
       },
       {
         "issue": "2026139",
         "date": "2026-05-29",
         "number": "286",
-        "rec_name": "大小分解",
-        "rec_decomp": "01234 — 56789",
-        "single_ok": true,
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": false,
         "ensemble_ok": true,
         "hits": [
           true,
           false,
           true,
-          true
+          false
         ]
       },
       {
@@ -863,7 +863,7 @@
           true,
           true,
           true,
-          true
+          false
         ]
       },
       {
@@ -900,8 +900,8 @@
         "issue": "2026135",
         "date": "2026-05-25",
         "number": "487",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -930,15 +930,15 @@
         "issue": "2026133",
         "date": "2026-05-23",
         "number": "080",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
-        "single_ok": false,
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
+        "single_ok": true,
         "ensemble_ok": true,
         "hits": [
           true,
           false,
           false,
-          false
+          true
         ]
       },
       {
@@ -983,15 +983,15 @@
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
         "issue": "2026129",
         "date": "2026-05-19",
         "number": "023",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -1005,15 +1005,15 @@
         "issue": "2026128",
         "date": "2026-05-18",
         "number": "776",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
-        "single_ok": false,
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
+        "single_ok": true,
         "ensemble_ok": true,
         "hits": [
           false,
           true,
           false,
-          false
+          true
         ]
       },
       {
@@ -1028,15 +1028,15 @@
           true,
           true,
           true,
-          true
+          false
         ]
       },
       {
         "issue": "2026126",
         "date": "2026-05-16",
         "number": "846",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -1118,7 +1118,7 @@
           true,
           false,
           true,
-          false
+          true
         ]
       },
       {
@@ -1185,9 +1185,9 @@
         "issue": "2026116",
         "date": "2026-05-06",
         "number": "020",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
-        "single_ok": true,
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": false,
         "ensemble_ok": true,
         "hits": [
           false,
@@ -1208,7 +1208,7 @@
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
@@ -1230,8 +1230,8 @@
         "issue": "2026113",
         "date": "2026-05-03",
         "number": "040",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": false,
         "ensemble_ok": true,
         "hits": [
@@ -1268,7 +1268,7 @@
           true,
           true,
           true,
-          true
+          false
         ]
       },
       {
@@ -1283,15 +1283,15 @@
           true,
           false,
           true,
-          false
+          true
         ]
       },
       {
         "issue": "2026109",
         "date": "2026-04-29",
         "number": "195",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -1335,8 +1335,8 @@
         "issue": "2026106",
         "date": "2026-04-26",
         "number": "928",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -1380,8 +1380,8 @@
         "issue": "2026103",
         "date": "2026-04-23",
         "number": "661",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -1418,7 +1418,7 @@
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
@@ -1478,7 +1478,7 @@
           true,
           true,
           false,
-          false
+          true
         ]
       },
       {
@@ -1500,8 +1500,8 @@
         "issue": "2026095",
         "date": "2026-04-15",
         "number": "022",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -1515,15 +1515,15 @@
         "issue": "2026094",
         "date": "2026-04-14",
         "number": "418",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
-        "single_ok": false,
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": true,
         "ensemble_ok": true,
         "hits": [
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
@@ -1538,7 +1538,7 @@
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
@@ -1598,7 +1598,7 @@
           true,
           true,
           false,
-          false
+          true
         ]
       },
       {
@@ -1628,7 +1628,7 @@
           true,
           false,
           false,
-          true
+          false
         ]
       },
       {
@@ -1643,7 +1643,7 @@
           true,
           true,
           true,
-          true
+          false
         ]
       },
       {
@@ -1658,7 +1658,7 @@
           true,
           true,
           false,
-          false
+          true
         ]
       },
       {
@@ -1725,8 +1725,8 @@
         "issue": "2026080",
         "date": "2026-03-31",
         "number": "802",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -1763,7 +1763,7 @@
           true,
           true,
           true,
-          true
+          false
         ]
       },
       {
@@ -1793,7 +1793,7 @@
           true,
           true,
           true,
-          true
+          false
         ]
       },
       {
@@ -1838,15 +1838,15 @@
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
         "issue": "2026072",
         "date": "2026-03-23",
         "number": "245",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -1883,7 +1883,7 @@
           true,
           false,
           true,
-          false
+          true
         ]
       },
       {
@@ -1905,8 +1905,8 @@
         "issue": "2026068",
         "date": "2026-03-19",
         "number": "706",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -1950,8 +1950,8 @@
         "issue": "2026065",
         "date": "2026-03-16",
         "number": "057",
-        "rec_name": "内外分解",
-        "rec_decomp": "01289 — 34567",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -1980,8 +1980,8 @@
         "issue": "2026063",
         "date": "2026-03-14",
         "number": "517",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -1995,8 +1995,8 @@
         "issue": "2026062",
         "date": "2026-03-13",
         "number": "294",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -2048,7 +2048,7 @@
           true,
           true,
           true,
-          true
+          false
         ]
       },
       {
@@ -2070,8 +2070,8 @@
         "issue": "2026057",
         "date": "2026-03-08",
         "number": "264",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -2093,30 +2093,30 @@
           true,
           true,
           false,
-          true
+          false
         ]
       },
       {
         "issue": "2026055",
         "date": "2026-03-06",
         "number": "107",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
-        "single_ok": true,
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
+        "single_ok": false,
         "ensemble_ok": true,
         "hits": [
           true,
           true,
           true,
-          true
+          false
         ]
       },
       {
         "issue": "2026054",
         "date": "2026-03-05",
         "number": "217",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -2130,8 +2130,8 @@
         "issue": "2026053",
         "date": "2026-03-04",
         "number": "755",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -2153,7 +2153,7 @@
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
@@ -2228,7 +2228,7 @@
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
@@ -2258,7 +2258,7 @@
           true,
           true,
           false,
-          false
+          true
         ]
       },
       {
@@ -2280,8 +2280,8 @@
         "issue": "2026043",
         "date": "2026-02-12",
         "number": "765",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -2303,7 +2303,7 @@
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
@@ -2318,15 +2318,15 @@
           true,
           true,
           false,
-          true
+          false
         ]
       },
       {
         "issue": "2026040",
         "date": "2026-02-09",
         "number": "425",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -2348,16 +2348,16 @@
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
         "issue": "2026038",
         "date": "2026-02-07",
         "number": "467",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
-        "single_ok": true,
+        "rec_name": "内外分解",
+        "rec_decomp": "01289 — 34567",
+        "single_ok": false,
         "ensemble_ok": true,
         "hits": [
           true,
@@ -2393,7 +2393,7 @@
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
@@ -2438,7 +2438,7 @@
           true,
           false,
           false,
-          true
+          false
         ]
       },
       {
@@ -2475,8 +2475,8 @@
         "issue": "2026030",
         "date": "2026-01-30",
         "number": "134",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -2535,15 +2535,15 @@
         "issue": "2026026",
         "date": "2026-01-26",
         "number": "099",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
-        "single_ok": true,
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
+        "single_ok": false,
         "ensemble_ok": true,
         "hits": [
           true,
           true,
           false,
-          true
+          false
         ]
       },
       {
@@ -2565,15 +2565,15 @@
         "issue": "2026024",
         "date": "2026-01-24",
         "number": "911",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
-        "single_ok": true,
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
+        "single_ok": false,
         "ensemble_ok": true,
         "hits": [
           true,
           false,
           false,
-          true
+          false
         ]
       },
       {
@@ -2610,8 +2610,8 @@
         "issue": "2026021",
         "date": "2026-01-21",
         "number": "559",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -2625,15 +2625,15 @@
         "issue": "2026020",
         "date": "2026-01-20",
         "number": "676",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
-        "single_ok": false,
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
+        "single_ok": true,
         "ensemble_ok": true,
         "hits": [
           false,
           true,
           false,
-          false
+          true
         ]
       },
       {
@@ -2663,7 +2663,7 @@
           true,
           true,
           true,
-          true
+          false
         ]
       },
       {
@@ -2685,15 +2685,15 @@
         "issue": "2026016",
         "date": "2026-01-16",
         "number": "582",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
-        "single_ok": true,
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
+        "single_ok": false,
         "ensemble_ok": true,
         "hits": [
           true,
           true,
           true,
-          true
+          false
         ]
       },
       {
@@ -2708,7 +2708,7 @@
           true,
           true,
           true,
-          true
+          false
         ]
       },
       {
@@ -2723,7 +2723,7 @@
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
@@ -2760,8 +2760,8 @@
         "issue": "2026011",
         "date": "2026-01-11",
         "number": "647",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
         "single_ok": true,
         "ensemble_ok": true,
         "hits": [
@@ -2775,15 +2775,15 @@
         "issue": "2026010",
         "date": "2026-01-10",
         "number": "667",
-        "rec_name": "四方分解",
-        "rec_decomp": "01458 — 23679",
-        "single_ok": false,
+        "rec_name": "08异分解",
+        "rec_decomp": "01479 — 23568",
+        "single_ok": true,
         "ensemble_ok": true,
         "hits": [
           false,
           true,
           false,
-          false
+          true
         ]
       },
       {
@@ -2798,7 +2798,7 @@
           true,
           true,
           true,
-          true
+          false
         ]
       },
       {
@@ -2813,7 +2813,7 @@
           true,
           true,
           true,
-          true
+          false
         ]
       },
       {
@@ -2828,7 +2828,7 @@
           true,
           false,
           false,
-          true
+          false
         ]
       },
       {
@@ -2873,7 +2873,7 @@
           true,
           true,
           false,
-          true
+          false
         ]
       },
       {
@@ -2948,7 +2948,7 @@
           true,
           true,
           true,
-          false
+          true
         ]
       },
       {
@@ -3047,7 +3047,7 @@
   },
   "rec_accuracy": {
     "200期": 89.0,
-    "500期": 80.6,
-    "1000期": 79.4
+    "500期": 81.0,
+    "1000期": 79.2
   }
 }
