@@ -39,23 +39,25 @@ def fetch_cwl():
 def fetch_tianqi():
     """源2: 天齐网 (HTML, 单期最新)"""
     url = 'https://www.800820.net/Article/Index.html'
-    req = Request(url, headers={'User-Agent': UA})
-    html = urlopen(req, timeout=15).read()
-    try: txt = html.decode('gb2312')
-    except: txt = html.decode('utf-8', errors='ignore')
-    
-    results = []
-    # Pattern: 福彩3D第2026192期中奖号码：425
-    m = re.search(r'福彩3D第(\d{7})期.*?中奖号码[：:\s]+(\d{3})', txt, re.DOTALL)
-    if m:
-        issue, num = m.group(1), m.group(2)
-        # Date: find near the issue
-        date_m = re.search(rf'{issue}.*?(\d{{4}}-\d{{2}}-\d{{2}})', txt)
-        date_str = date_m.group(1) if date_m else (datetime.now()-timedelta(days=1)).strftime('%Y-%m-%d')
-        results.append({'issue': issue, 'date': date_str,
-                        'hundreds': num[0], 'tens': num[1], 'ones': num[2],
-                        'number': num})
-    return results
+    try:
+        req = Request(url, headers={'User-Agent': UA})
+        html = urlopen(req, timeout=10).read()
+        try: txt = html.decode('gb2312')
+        except: txt = html.decode('utf-8', errors='ignore')
+        # Debug: show first 500 chars
+        # print(f'天齐前500字: {txt[:500]}')
+        m = re.search(r'福彩3D第(\d{7})期.*?中奖号码[：:\s]+(\d{3})', txt, re.DOTALL)
+        if m:
+            return [{'issue': m.group(1), 'date': '', 'hundreds': m.group(2)[0], 'tens': m.group(2)[1], 'ones': m.group(2)[2], 'number': m.group(2)}]
+        # Try simpler: just find the issue and number separately
+        issue_m = re.search(r'福彩3D第(\d{7})期', txt)
+        num_m = re.search(r'中奖号码[：:\s]+(\d{3})', txt)
+        if issue_m and num_m:
+            issue, num = issue_m.group(1), num_m.group(1)
+            return [{'issue': issue, 'date': '', 'hundreds': num[0], 'tens': num[1], 'ones': num[2], 'number': num}]
+        return []
+    except Exception as e:
+        raise Exception(f'天齐网: {e}')
 
 def fetch_sina():
     """源3: 新浪彩票走势图"""
