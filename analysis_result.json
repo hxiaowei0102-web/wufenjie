@@ -1,6 +1,6 @@
 {
   "prediction": {
-    "version": "S92",
+    "version": "S91",
     "next_issue": "2026193",
     "next_date": "2026-07-22",
     "today_date": "2026-07-22",
@@ -39,7 +39,7 @@
   "backtest_200": {
     "total": 200,
     "correct_ensemble": 200,
-    "correct_single": 182,
+    "correct_single": 181,
     "results": [
       {
         "issue": "2026192",
@@ -840,9 +840,9 @@
         "issue": "2026139",
         "date": "2026-05-29",
         "number": "286",
-        "rec_name": "大小分解",
-        "rec_decomp": "01234 — 56789",
-        "single_ok": true,
+        "rec_name": "奇偶分解",
+        "rec_decomp": "13579 — 02468",
+        "single_ok": false,
         "ensemble_ok": true,
         "hits": [
           true,
@@ -1425,8 +1425,8 @@
         "issue": "2026100",
         "date": "2026-04-20",
         "number": "414",
-        "rec_name": "08异分解",
-        "rec_decomp": "01479 — 23568",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
         "single_ok": false,
         "ensemble_ok": true,
         "hits": [
@@ -3043,11 +3043,11 @@
       }
     ],
     "ensemble_acc": 100.0,
-    "single_acc": 91.0
+    "single_acc": 90.5
   },
   "rec_accuracy": {
-    "200期": 91.0,
-    "500期": 82.0,
-    "1000期": 79.9
+    "200期": 90.5,
+    "500期": 81.8,
+    "1000期": 80.0
   }
 }
