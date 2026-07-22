@@ -97,12 +97,12 @@ td.rec{{font-size:10px;color:var(--pri);font-weight:600}}
 </head>
 <body>
 <div class="container">
-<div class="header"><h1>福彩3D 五五分解预测系统 <span style="font-size:14px;opacity:0.7;">v{V}</span></h1><div class="sub">四分解≥1命中 | 200期100% | 推荐均值{M}%±{S}% (22窗口交叉验证)</div></div>
+<div class="header"><h1>福彩3D 五五分解预测系统 <span style="font-size:14px;opacity:0.7;">v{V}</span></h1><div class="sub">四分解≥1命中 | 100期推荐率{R['100期']}% | 均值{M}%±{S}%</div></div>
 
 <div class="pred-main card">
 <div class="pred-left"><div class="pred-sub">预测</div><div class="pred-issue">{P['next_issue']}</div><div class="pred-date">{P['next_date']}</div><div class="pred-sub">上期 {P['last_issue']} <b style="color:#e74c3c;">{P['last_number']}</b></div></div>
 <div class="pred-center"><div class="pred-decomp"><div class="name">{P['rec_name']}</div><div class="split">{P['rec_decomp']}</div></div><div class="pred-reason">{P['reason']}</div><div class="backup">{backup_html}</div></div>
-<div class="pred-right"><div class="pred-sub">本期推荐率(异常)</div><div class="acc-big2">{R['200期']}%</div><div class="pred-sub">真实均值 {M}%±{S}%</div><div class="pred-sub" style="margin-top:8px">整体保障</div><div class="acc-big">{A['200期']}%</div></div>
+<div class="pred-right"><div class="pred-sub">本期推荐率</div><div class="acc-big2">{R['100期']}%</div><div class="pred-sub">真实均值 {M}%±{S}%</div><div class="pred-sub" style="margin-top:8px">整体保障</div><div class="acc-big">{A['200期']}%</div></div>
 </div>
 
 <div class="grid-4">{acc_cards}</div>

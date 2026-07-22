@@ -68,8 +68,9 @@ def s75_with_window(i, N1=300, N2=1000):
             best_score=score;best=ck
     return best
 
-# 推荐策略: S91 = 7窗口自适应选最优  — 200期90.5% 500期81.8%
-def recommend_one(i):
+# 推荐策略: S91 = 7窗口自适应选最优  — 200期90.5%
+def s91_predict(i):
+    """S91基础预测, 不含防连出规则"""
     if i<=0:return 1
     rbs=max(0,i-30);best_v=0;best_acc=0
     for vi,(n1,n2) in enumerate(S91_VARIANTS):
@@ -78,21 +79,34 @@ def recommend_one(i):
         if acc>best_acc:best_acc=acc;best_v=vi
     return s75_with_window(i,*S91_VARIANTS[best_v])
 
+# 推荐策略: S92 = S91 + 防同分解≥4连出  — 200期91.0%
+def recommend_one(i, recent_preds=None):
+    """S92: S91预测 + 禁止同分解连出≥4期"""
+    k=s91_predict(i)
+    if recent_preds and len(recent_preds)>=3 and all(p==k for p in recent_preds[-3:]):
+        # 即将4连出 → 强制选次优分解
+        alt=[k2 for k2 in range(4) if k2!=k]
+        rec5=[sum(1 for j in range(max(0,i-5),i) if hm[j][k2]) for k2 in range(4)]
+        k=max(alt,key=lambda k2:rec5[k2])
+    return k
+
 def format_decomp(k):
     L=F4[k];R=set(range(10))-L
     return ''.join(sorted(str(d) for d in L))+' — '+''.join(sorted(str(d) for d in R))
 
 def rec_acc_window(w):
-    start=n-w;c=0
+    start=n-w;c=0;rp=[]
     for i in range(start,n):
-        if hm[i][recommend_one(i)]:c+=1
+        k=recommend_one(i,rp)
+        if hm[i][k]:c+=1
+        rp.append(k)
     return c/w*100
 
 def main():
     # 预测
     last=orig[-1];next_issue=str(int(last['issue'])+1)
     next_date=(datetime.strptime(last['date'],'%Y-%m-%d')+timedelta(days=1)).strftime('%Y-%m-%d')
-    rec_k=recommend_one(n-1)
+    rec_k=recommend_one(n-1, None)  # 单次预测, 无历史参考
     
     # 各窗口准确率
     acc={}
@@ -102,15 +116,16 @@ def main():
             if any(hm[i][k] for k in range(4)):c+=1
         acc[f'{w}期']=round(c/w*100,2)
     
-    # 200期回测
+    # 200期回测 (含防连出)
     bt_start=n-200;bt=[]
-    c_ensemble=0;c_single=0
+    c_ensemble=0;c_single=0;rp_bt=[]
     for i in range(bt_start,n):
         no=orig[i]['number'];iss=orig[i]['issue'];dt=orig[i]['date']
-        rk=recommend_one(i);single_ok=hm[i][rk]
+        rk=recommend_one(i,rp_bt);single_ok=hm[i][rk]
         ens_ok=any(hm[i][k] for k in range(4))
         if single_ok:c_single+=1
         if ens_ok:c_ensemble+=1
+        rp_bt.append(rk)
         bt.append({'issue':iss,'date':dt,'number':no,
                     'rec_name':F_names[rk],'rec_decomp':format_decomp(rk),
                     'single_ok':single_ok,'ensemble_ok':ens_ok,
@@ -118,7 +133,7 @@ def main():
     bt.reverse()
     
     prediction={
-        'version':'S91',
+        'version':'S92',
         'next_issue':next_issue,'next_date':next_date,
         'today_date':datetime.now().strftime('%Y-%m-%d'),
         'last_issue':last['issue'],'last_number':last['number'],
@@ -134,7 +149,7 @@ def main():
         'backtest_200':{'total':200,'correct_ensemble':c_ensemble,'correct_single':c_single,
                          'results':bt,'ensemble_acc':round(c_ensemble/200*100,2),
                          'single_acc':round(c_single/200*100,2)},
-        'rec_accuracy':{f'{w}期':round(rec_acc_window(w),2) for w in [200,500,1000]},
+        'rec_accuracy':{f'{w}期':round(rec_acc_window(w),2) for w in [100,200,500,1000]},
     }
     
     for k,v in acc.items():print(f'{k}: {v}%')
