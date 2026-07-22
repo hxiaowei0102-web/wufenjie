@@ -13,9 +13,15 @@ def fetch_cwl():
     """源1: 中彩网官方API"""
     url = 'https://www.cwl.gov.cn/cwl_admin/front/cwlkj/search/kjxx/findDrawNotice?name=3d&issueCount=5'
     req = Request(url, headers={
-        'User-Agent': UA,
-        'Accept': 'application/json',
-        'Referer': 'https://www.cwl.gov.cn/',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+        'Accept': 'application/json, text/plain, */*',
+        'Accept-Language': 'zh-CN,zh;q=0.9',
+        'Referer': 'https://www.cwl.gov.cn/ygkj/wqkjgg/ssq/',
+        'Origin': 'https://www.cwl.gov.cn',
+        'Connection': 'keep-alive',
+        'Sec-Fetch-Dest': 'empty',
+        'Sec-Fetch-Mode': 'cors',
+        'Sec-Fetch-Site': 'same-origin',
     })
     data = json.loads(urlopen(req, timeout=15).read())
     if data.get('state') != 0: raise Exception(f'API state={data.get("state")}')
