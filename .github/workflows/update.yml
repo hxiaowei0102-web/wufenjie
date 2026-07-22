@@ -10,11 +10,18 @@ on:
     - cron: '0 17 * * *'
   workflow_dispatch:
 
+# 防止cron堆积: 同时只运行一个
+concurrency:
+  group: update-pipeline
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    # 开奖后才运行(21:15后)
+    if: github.event_name == 'workflow_dispatch' || true
     
     steps:
     - uses: actions/checkout@v4
@@ -39,5 +46,5 @@ jobs:
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         git add fc3d-history.csv analysis_result.json index.html 五五分解预测系统.html
-        git diff --cached --quiet || git commit -m "🤖 自动更新 $(date +%Y%m%d) [$(TZ='Asia/Shanghai' date +%H:%M)]"
-        git push
+        git diff --cached --quiet || { git commit -m "🤖 自动更新 $(date +%Y%m%d) [$(TZ='Asia/Shanghai' date +%H:%M)]" && git push; }
+        echo "更新完成"
