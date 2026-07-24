@@ -8,31 +8,36 @@ from urllib.error import URLError
 CSV_PATH = 'fc3d-history.csv'
 
 def fetch_500():
-    """源1: 500.com Ajax API (GitHub Actions可用, 已验证)"""
-    url = 'https://datachart.500.com/3d/history/newinc/history.php?start=2026180&end=2026199&limit=20'
+    """源1: 500.com 开奖页面 HTML解析"""
+    url = 'https://kaijiang.500.com/3d.shtml'
     req = Request(url, headers={
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-        'Accept': '*/*',
-        'Referer': 'https://datachart.500.com/3d/',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml',
     })
     try:
-        html = urlopen(req, timeout=15).read().decode('utf-8', errors='ignore')
+        html = urlopen(req, timeout=15).read().decode('gb2312', errors='ignore')
     except Exception as e:
         raise Exception(f'500.com: {e}')
     
     results = []
-    # 500.com returns HTML table rows with class "t_tr1"
-    # Pattern: <tr class="t_tr1"><td>2026193</td><td>254</td>...
-    for m in re.finditer(r'<td>(\d{7})</td>\s*<td[^>]*>(\d{3})</td>', html):
-        issue, num = m.group(1), m.group(2)
-        if int(issue) < 2026000: continue
-        results.append({'issue': issue, 'date': '',
-                        'hundreds': num[0], 'tens': num[1], 'ones': num[2],
-                        'number': num})
-    if results:
-        results.reverse()  # oldest first
-        return results
-    return []
+    # Pattern: <span class="span_right">2026194</span> ... <div class="ball_red">2</div><div class="ball_red">8</div><div class="ball_red">3</div>
+    # or simple: find issue-number pairs
+    issues = re.findall(r'<span[^>]*>(\d{7})</span>', html)
+    # find 3-digit numbers near the issue
+    for issue in issues[-5:]:
+        # Search for 3 single-digit numbers after this issue
+        pos = html.find(issue)
+        if pos < 0: continue
+        snippet = html[pos:pos+500]
+        digits = re.findall(r'>(\d)<', snippet)
+        if len(digits) >= 3:
+            num = ''.join(digits[:3])
+            if num.isdigit() and len(num) == 3:
+                results.append({'issue': issue, 'date': '',
+                                'hundreds': num[0], 'tens': num[1], 'ones': num[2],
+                                'number': num})
+    results.sort(key=lambda x: x['issue'])
+    return results
 
 def fetch_cwl():
     """源2: 中彩网官方API"""
