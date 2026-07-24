@@ -1,14 +1,14 @@
 {
   "prediction": {
     "version": "S92",
-    "next_issue": "2026194",
-    "next_date": "2026-07-23",
-    "today_date": "2026-07-23",
-    "last_issue": "2026193",
-    "last_number": "254",
+    "next_issue": "2026195",
+    "next_date": "2026-07-24",
+    "today_date": "2026-07-24",
+    "last_issue": "2026194",
+    "last_number": "283",
     "rec_name": "大小分解",
     "rec_decomp": "01234 — 56789",
-    "reason": "上期2026193 大小分解命中，本期推荐",
+    "reason": "上期2026194 大小分解命中，本期推荐",
     "all_decomps": [
       {
         "name": "大小分解",
@@ -41,6 +41,21 @@
     "correct_ensemble": 200,
     "correct_single": 183,
     "results": [
+      {
+        "issue": "2026194",
+        "date": "2026-07-23",
+        "number": "283",
+        "rec_name": "大小分解",
+        "rec_decomp": "01234 — 56789",
+        "single_ok": true,
+        "ensemble_ok": true,
+        "hits": [
+          true,
+          true,
+          true,
+          false
+        ]
+      },
       {
         "issue": "2026193",
         "date": "2026-07-22",
@@ -3021,21 +3036,6 @@
         "ensemble_ok": true,
         "hits": [
           false,
-          true,
-          true,
-          true
-        ]
-      },
-      {
-        "issue": "2025345",
-        "date": "2025-12-25",
-        "number": "630",
-        "rec_name": "内外分解",
-        "rec_decomp": "01289 — 34567",
-        "single_ok": true,
-        "ensemble_ok": true,
-        "hits": [
-          true,
           true,
           true,
           true
