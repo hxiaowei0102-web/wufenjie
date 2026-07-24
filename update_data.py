@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""福彩3D数据更新 — 三重备用源降级链"""
+"""福彩3D数据更新 — 500.com主源 + 中彩网兜底"""
 import csv, json, os, re, sys
 from datetime import datetime, timedelta
 from urllib.request import Request, urlopen
@@ -7,160 +7,130 @@ from urllib.error import URLError
 
 CSV_PATH = 'fc3d-history.csv'
 
-UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-
-def fetch_cwl():
-    """源1: 中彩网官方API"""
-    url = 'https://www.cwl.gov.cn/cwl_admin/front/cwlkj/search/kjxx/findDrawNotice?name=3d&issueCount=5'
+def fetch_500():
+    """源1: 500.com Ajax API (GitHub Actions可用, 已验证)"""
+    url = 'https://datachart.500.com/3d/history/newinc/history.php?start=2026180&end=2026199&limit=20'
     req = Request(url, headers={
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
-        'Accept': 'application/json, text/plain, */*',
-        'Accept-Language': 'zh-CN,zh;q=0.9',
-        'Referer': 'https://www.cwl.gov.cn/ygkj/wqkjgg/ssq/',
-        'Origin': 'https://www.cwl.gov.cn',
-        'Connection': 'keep-alive',
-        'Sec-Fetch-Dest': 'empty',
-        'Sec-Fetch-Mode': 'cors',
-        'Sec-Fetch-Site': 'same-origin',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        'Accept': '*/*',
+        'Referer': 'https://datachart.500.com/3d/',
     })
-    data = json.loads(urlopen(req, timeout=15).read())
-    if data.get('state') != 0: raise Exception(f'API state={data.get("state")}')
-    results = []
-    for r in data['result']:
-        reds = r['red'].split(',')
-        date_str = r['date'].split('(')[0]
-        number = ''.join(reds)
-        results.append({'issue': r['code'], 'date': date_str,
-                        'hundreds': reds[0], 'tens': reds[1], 'ones': reds[2],
-                        'number': number})
-    results.sort(key=lambda x: x['issue'])
-    return results
-
-def fetch_tianqi():
-    """源2: 天齐网 (HTML, 单期最新)"""
-    url = 'https://www.800820.net/Article/Index.html'
     try:
-        req = Request(url, headers={'User-Agent': UA})
-        html = urlopen(req, timeout=10).read()
-        try: txt = html.decode('gb2312')
-        except: txt = html.decode('utf-8', errors='ignore')
-        # Debug: show first 500 chars
-        # print(f'天齐前500字: {txt[:500]}')
-        m = re.search(r'福彩3D第(\d{7})期.*?中奖号码[：:\s]+(\d{3})', txt, re.DOTALL)
-        if m:
-            return [{'issue': m.group(1), 'date': '', 'hundreds': m.group(2)[0], 'tens': m.group(2)[1], 'ones': m.group(2)[2], 'number': m.group(2)}]
-        # Try simpler: just find the issue and number separately
-        issue_m = re.search(r'福彩3D第(\d{7})期', txt)
-        num_m = re.search(r'中奖号码[：:\s]+(\d{3})', txt)
-        if issue_m and num_m:
-            issue, num = issue_m.group(1), num_m.group(1)
-            return [{'issue': issue, 'date': '', 'hundreds': num[0], 'tens': num[1], 'ones': num[2], 'number': num}]
-        return []
+        html = urlopen(req, timeout=15).read().decode('utf-8', errors='ignore')
     except Exception as e:
-        raise Exception(f'天齐网: {e}')
-
-def fetch_sina():
-    """源3: 新浪彩票走势图"""
-    url = 'https://view.lottery.sina.com.cn/lotto/pc_zst/index?lottoType=3d&actionType=joxt&dpc=1'
-    req = Request(url, headers={'User-Agent': UA})
-    html = urlopen(req, timeout=15).read().decode('utf-8', errors='ignore')
+        raise Exception(f'500.com: {e}')
     
     results = []
-    seen = set()
-    # Pattern: 2026192425 (7-digit issue + 3-digit number)
-    for m in re.finditer(r'(\d{7})\s*(\d{3})', html):
+    # 500.com returns HTML table rows with class "t_tr1"
+    # Pattern: <tr class="t_tr1"><td>2026193</td><td>254</td>...
+    for m in re.finditer(r'<td>(\d{7})</td>\s*<td[^>]*>(\d{3})</td>', html):
         issue, num = m.group(1), m.group(2)
-        if int(issue) < 2002000 or issue in seen: continue
-        seen.add(issue)
+        if int(issue) < 2026000: continue
         results.append({'issue': issue, 'date': '',
                         'hundreds': num[0], 'tens': num[1], 'ones': num[2],
                         'number': num})
+    if results:
+        results.reverse()  # oldest first
+        return results
+    return []
+
+def fetch_cwl():
+    """源2: 中彩网官方API"""
+    url = 'https://www.cwl.gov.cn/cwl_admin/front/cwlkj/search/kjxx/findDrawNotice?name=3d&issueCount=5'
+    try:
+        req = Request(url, headers={
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+            'Accept': 'application/json',
+            'Referer': 'https://www.cwl.gov.cn/',
+        })
+        data = json.loads(urlopen(req, timeout=10).read())
+    except: return []
+    
+    if data.get('state') != 0: return []
+    results = []
+    for r in data['result']:
+        reds = r['red'].split(',')
+        results.append({'issue': r['code'], 'date': r['date'].split('(')[0],
+                        'hundreds': reds[0], 'tens': reds[1], 'ones': reds[2],
+                        'number': ''.join(reds)})
+    results.sort(key=lambda x: x['issue'])
     return results
 
-def fetch_backup():
-    """源4: 备用源 - 深圳开放数据"""
-    results = []
-    # Try multiple known-good sources
-    urls = [
-        'https://www.cwl.gov.cn/cwl_admin/front/cwlkj/search/kjxx/findDrawNotice?name=3d&issueCount=5',
+def fetch_cors():
+    """源3: 中彩网API via CORS代理"""
+    proxies = [
+        'https://api.allorigins.win/raw?url=',
+        'https://corsproxy.io/?',
     ]
-    # Just retry source 1 with different approach
-    for url in urls:
+    api_path = 'https://www.cwl.gov.cn/cwl_admin/front/cwlkj/search/kjxx/findDrawNotice?name=3d&issueCount=5'
+    from urllib.parse import quote
+    for proxy in proxies:
         try:
-            req = Request(url, headers={
-                'User-Agent': 'python-requests/2.31.0',
-                'Accept': '*/*',
-            })
-            data = json.loads(urlopen(req, timeout=10).read())
+            url = proxy + quote(api_path, safe='')
+            req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+            data = json.loads(urlopen(req, timeout=15).read())
             if data.get('state') == 0:
+                results = []
                 for r in data['result']:
                     reds = r['red'].split(',')
-                    results.append({'issue': r['code'],
-                                    'date': r['date'].split('(')[0],
+                    results.append({'issue': r['code'], 'date': r['date'].split('(')[0],
                                     'hundreds': reds[0], 'tens': reds[1], 'ones': reds[2],
                                     'number': ''.join(reds)})
-            results.sort(key=lambda x: x['issue'])
-            return results
-        except: pass
-    return results
-
-def load_existing():
-    if not os.path.exists(CSV_PATH): return []
-    with open(CSV_PATH, 'r', encoding='utf-8') as f:
-        return list(csv.DictReader(f))
-
-def save_csv(rows):
-    with open(CSV_PATH, 'w', encoding='utf-8', newline='') as f:
-        w = csv.DictWriter(f, fieldnames=['issue','date','hundreds','tens','ones','number','raw'])
-        w.writeheader()
-        for r in rows:
-            if 'raw' not in r:
-                r['raw'] = ' '.join([r['hundreds'],r['tens'],r['ones']] + ['0']*12)
-            w.writerow(r)
+                results.sort(key=lambda x: x['issue'])
+                return results
+        except: continue
+    return []
 
 def main():
-    existing = load_existing()
-    existing_issues = {r['issue'] for r in existing}
-    print(f"已有: {len(existing)}期, 最新: {existing[-1]['issue'] if existing else '无'}")
+    # Ensure CSV exists
+    if not os.path.exists(CSV_PATH):
+        print(f'ERROR: {CSV_PATH} not found')
+        sys.exit(1)
     
+    # Read existing issues
+    existing = set()
+    with open(CSV_PATH, 'r', encoding='utf-8') as f:
+        for row in csv.DictReader(f):
+            existing.add(row['issue'])
+    
+    # Try sources in order
     sources = [
-        (fetch_cwl, '中彩网API'),
-        (fetch_tianqi, '天齐网'),
-        (fetch_sina, '新浪彩票'),
-        (fetch_backup, '备用API'),
+        ('500.com', fetch_500),
+        ('中彩网API', fetch_cwl),
+        ('CORS代理', fetch_cors),
     ]
     
-    new_data = None
-    for fetch_fn, name in sources:
+    new_data = []
+    for name, fn in sources:
         try:
-            print(f"尝试 {name}...", end=' ')
-            data = fetch_fn()
-            if data:
-                new_count = sum(1 for d in data if d['issue'] not in existing_issues)
-                print(f"返回{len(data)}条, 新{new_count}条")
-                if new_count > 0:
-                    new_data = data
+            results = fn()
+            if results:
+                new_count = len([r for r in results if r['issue'] not in existing])
+                print(f'  源 {name}: 返回{len(results)}条, 新增{new_count}条')
+                new_data = [r for r in results if r['issue'] not in existing]
+                if new_data:
                     break
-                else:
-                    print(f"  (无新数据)")
             else:
-                print("返回空")
+                print(f'  源 {name}: 无数据')
         except Exception as e:
-            print(f"失败: {str(e)[:80]}")
+            print(f'  源 {name}: 失败 - {e}')
     
     if not new_data:
-        print("所有源均无新数据")
-        # Still return success so pipeline continues
+        print('所有源均无新数据, 跳过更新')
         return
     
-    updated = list(existing)
-    for d in new_data:
-        if d['issue'] not in existing_issues:
-            updated.append(d)
+    # Append new data
+    with open(CSV_PATH, 'a', encoding='utf-8', newline='') as f:
+        writer = csv.writer(f)
+        for r in new_data:
+            writer.writerow([r['issue'], r['date'], r['hundreds'], r['tens'], r['ones'],
+                            r['number'], f'{r["hundreds"]} {r["tens"]} {r["ones"]} 0 0 0 0 0 0 0 0 0 0 0 0'])
+    print(f'追加{len(new_data)}期: {[r["issue"] for r in new_data]}')
     
-    updated.sort(key=lambda x: x['issue'])
-    save_csv(updated)
-    print(f"✓ 新增{len(updated)-len(existing)}期, 总计{len(updated)}期")
+    # Also write backup
+    with open('fc3d-history.backup.csv', 'w', encoding='utf-8') as fb:
+        with open(CSV_PATH, 'r', encoding='utf-8') as fsrc:
+            fb.write(fsrc.read())
 
 if __name__ == '__main__':
     main()
